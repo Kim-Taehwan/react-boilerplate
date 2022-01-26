@@ -1,0 +1,26 @@
+.tbfe-page-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  &__content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+
+    .h4 {
+      padding-top: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      left: calc(50% + 90px);
+    }
+  }
+}

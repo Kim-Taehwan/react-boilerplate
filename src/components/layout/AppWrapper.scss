@@ -1,0 +1,37 @@
+@import 'src/styles/variables';
+
+.tbfe-app {
+  &-main {
+    position: relative;
+  }
+
+  &-nav {
+    @media (max-width: 767px) {
+      &.collapse {
+        position: absolute;
+        top: 3rem;
+        left: initial;
+        bottom: initial;
+
+        &:not(.show){
+          top: 0;
+          height: 0;
+          display: block;
+          overflow: hidden;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      max-width: 350px;
+    }
+  }
+
+  .sidebar {
+    .nav-link {
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+}

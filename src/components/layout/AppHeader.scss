@@ -1,0 +1,13 @@
+@import 'src/styles/variables';
+
+.tbfe-app-header {
+  &__logo {
+    width: 1.5rem;
+    margin-top: -3px;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  }
+}
